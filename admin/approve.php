@@ -20,18 +20,11 @@
     }
 
     $id = $_GET['id'];
-
-
-    $name= "SELECT * FROM 'uploads' WHERE `id` = $id;";
-    performQuery($name);
-        if($name == 1){
-            $name=$row['owner'];
-  
-    $query ="INSERT INTO `notifications` (`id`, `name`, `type`, `message`, `status`, `date`) VALUES (NULL, '', '$name', 'approved', 'unread', CURRENT_TIMESTAMP)";
-              if(performQuery($query)){
+    $query ="UPDATE `uploads` SET `status` = 'approved' WHERE `id` = $id;";
+        if(performQuery($query)){
                 header("location: claims.php");
               }
-    }
+    
 
     
 ?>
