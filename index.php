@@ -68,7 +68,7 @@
 	<div>
 		<ul class="form-header">
 		<li><label for="login"><i class="material-icons">lock</i> LOGIN</li>
-		<li><label for="signup"><i class="material-icons">credit_card</i> REGISTER</label></li>
+		<li><label for="signup"><i class="material-icons">account_box</i> REGISTER</label></li>
 		</ul>
 	</div>
 
